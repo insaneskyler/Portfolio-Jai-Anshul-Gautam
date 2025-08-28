@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Jai Anshul Gautam</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #0b0c10;
+      color: #f1f1f1;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .contact-section {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    .contact-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent, #00bcd4);
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    /* Contact Info */
+    .contact-info {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: var(--accent, #00bcd4);
+    }
+
+    .contact-info p {
+      margin-bottom: 12px;
+      color: #ccc;
+    }
+
+    .contact-info i {
+      color: var(--accent, #00bcd4);
+      margin-right: 10px;
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      color: #fff;
+      margin-right: 15px;
+      font-size: 1.4rem;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: var(--accent, #00bcd4);
+    }
+
+    /* Contact Form */
+    .contact-form {
+      flex: 1;
+      min-width: 280px;
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 1rem;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+    }
+
+    .contact-form textarea {
+      min-height: 120px;
+      resize: none;
+    }
+
+    .contact-form button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: var(--accent, #00bcd4);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .contact-form button:hover {
+      background: #008c9e;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-a"></i>
+          <div class="logo-text">Jai Anshul Gautam</div>
+        </div>
+        <nav>
+          <div class="togglebtn"><span></span><span></span><span></span></div>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index1.html">Portfolio</a></li>
+            <li><a href="https://drive.google.com/file/d/1xSZHXWu920LaA1ci09r1c_sYAncDEvE5/view?usp=sharing" target="_blank">Resume</a></li>
+
+            <li><a href="index2.html">Blog</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <h1 class="contact-title" data-aos="fade-up">📬 Get in Touch</h1>
+        
+        <div class="contact-container">
+          <!-- Info -->
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Contact Information</h3>
+            <p><i class="fa-solid fa-envelope"></i> jai.anshulgautam.se@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 7762807632</p>
+            <p><i class="fa-solid fa-location-dot"></i> India</p>
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/jai-anshul-gautam-08aab022a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/insaneskyler" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://wa.me/917762807632" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form" data-aos="fade-left">
+            <form action="mailto:jai.anshulgautam.se@gmail.com" method="post" enctype="text/plain">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    togglebtn.addEventListener("click",function(){
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+    })
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Jai Anshul Gautam</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index1.html">Portfolio</a></li>
+                        <li><a href="https://drive.google.com/file/d/1xSZHXWu920LaA1ci09r1c_sYAncDEvE5/view?usp=sharing">Resume</a></li>
+                        <li><a href="index2.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="/Anshul-pic.png" alt="portfolio pic" srcset="">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Jai Anshul Gautam</h1>
+                    <p>Passionate Computer Science student skilled in Java, Python, web technologies, and AI-based solutions. Eager to apply problem-solving and development skills to create impactful, user-focused software projects.</p>
+
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1xSZHXWu920LaA1ci09r1c_sYAncDEvE5/view?usp=sharing" target="_blank"class="btn active">Download CV</a>
+                        <a href="contact.html" class="btn">Contact</a>
+
+                    </div>
+
+                    <div class="social">
+                       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jai.anshulgautam.se@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/jai-anshul-gautam-08aab022a/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/insaneskyler" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/917762807632" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var nav=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Software Developer","UX Designer","Web Developer"],
+            typedSpeed: 70,
+            backSpeed:55,
+            loop:true
+
+        })
+    </script>
+</body>
+</html>

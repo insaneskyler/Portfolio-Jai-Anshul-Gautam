@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessons from Developing My Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { background: #0b0c10; color: #f1f1f1; font-family: "Poppins", sans-serif; line-height: 1.8; }
+    .blog-post { max-width: 900px; margin: 80px auto; padding: 20px; }
+    .post-title { font-size: 2.2rem; font-weight: 700; color: var(--accent, #00bcd4); margin-bottom: 15px; text-align: center; }
+    .post-meta { font-size: 0.9rem; color: #aaa; margin-bottom: 30px; text-align: center; }
+    .post-content p { margin-bottom: 18px; font-size: 1.05rem; color: #ddd; }
+    .post-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 1.5rem; color: var(--accent, #00bcd4); }
+    .back-link { display: inline-block; margin-top: 40px; padding: 10px 18px; border-radius: 8px; background: var(--accent, #00bcd4); color: #fff; font-weight: 500; text-decoration: none; }
+    .back-link:hover { background: #008c9e; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo"><i class="fa-solid fa-a"></i><div class="logo-text">Jai Anshul Gautam</div></div>
+        <nav>
+          <div class="togglebtn"><span></span><span></span><span></span></div>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index1.html">Portfolio</a></li>
+            <li><a href="index2.html" class="active">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="blog-post" data-aos="fade-up">
+        <h1 class="post-title">💡 Lessons from Developing My Portfolio Website</h1>
+        <div class="post-meta">Posted on August 28, 2025 · 4 min read</div>
+        <div class="post-content">
+          <p>Creating my personal portfolio was more than just building a website — it was about learning how to present myself online as a developer.</p>
+          <h2>🔧 Key Lessons</h2>
+          <p>- Importance of responsive design.<br>- Why minimal UI often works better.<br>- Handling animations without affecting performance.</p>
+          <h2>🚀 Future Improvements</h2>
+          <p>I plan to expand my portfolio into a mini personal brand hub with blogs, certifications, and live project demos.</p>
+        </div>
+        <a href="index2.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Blog</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Jai Anshul Gautam</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #0b0c10;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .portfolio-section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .sub-section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 50px 0 30px;
+      color: var(--accent, #00bcd4);
+      text-align: center;
+    }
+
+    /* Separator line */
+    .section-separator {
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--accent, #00bcd4), transparent);
+      margin: 60px auto;
+      width: 80%;
+      opacity: 0.5;
+    }
+
+    /* Background alternation for sections */
+    .bg-alt-1 { background: rgba(255,255,255,0.02); padding: 60px 20px; border-radius: 10px; }
+    .bg-alt-2 { background: rgba(255,255,255,0.05); padding: 60px 20px; border-radius: 10px; }
+    .bg-alt-3 { background: rgba(255,255,255,0.08); padding: 60px 20px; border-radius: 10px; }
+
+    /* Projects Grid */
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+    .portfolio-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 15px;
+      width: 320px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+    .portfolio-card h3 { color: #fff; font-size: 1.3rem; margin-bottom: 10px; }
+    .portfolio-card p { color: #ccc; font-size: 0.95rem; margin-bottom: 15px; }
+    .portfolio-card .btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      background: var(--accent, #00bcd4);
+      color: #fff;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .portfolio-card .btn:hover { background: #008c9e; transform: translateY(-2px); }
+    .portfolio-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.45); }
+
+    /* Skills Section */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    .skills-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.08);
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      cursor: default;
+    }
+    .skills-list li i { font-size: 1.2rem; color: var(--accent, #00bcd4); }
+    .skills-list li:hover { transform: scale(1.1); background: var(--accent, #00bcd4); box-shadow: 0 6px 18px rgba(0,188,212,0.5); }
+    .skills-list li:hover i { color: #fff; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .portfolio-grid { flex-direction: column; align-items: center; }
+      .portfolio-card { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-a"></i>
+          <div class="logo-text">Jai Anshul Gautam</div>
+        </div>
+        <nav>
+          <div class="togglebtn"><span></span><span></span><span></span></div>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index1.html" class="active">Portfolio</a></li>
+            <li><a href="https://drive.google.com/file/d/1xSZHXWu920LaA1ci09r1c_sYAncDEvE5/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a href="index2.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- ===== Portfolio Content ===== -->
+      <div class="portfolio-section">
+
+        <!-- Projects Done -->
+        <div class="bg-alt-1" data-aos="fade-up">
+          <h2 class="sub-section-title">Projects Done</h2>
+          <div class="portfolio-grid">
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="0">
+              <h3>🌐 Vedic Astrology Website</h3>
+              <p>Responsive, SEO-optimized website with dark mode toggle and animations.</p>
+              <a href="https://srisundramacharya.com" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+              <h3>🤖 AI-Based Post Recommendation System</h3>
+              <p>Streamlit Cloud app using collaborative & content-based filtering, cosine similarity, and sparse matrices.</p>
+              <a href="https://my-new-recommendation-67cpaquwimapppptid6ol6f.streamlit.app/" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="400">
+              <h3>🖥️ Personal Portfolio Website</h3>
+              <p>Modern, responsive portfolio with animations and integrated contact features.</p>
+              <a href="index.html" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="section-separator">
+
+        <!-- Languages Known -->
+        <div class="bg-alt-2" data-aos="fade-up">
+          <h2 class="sub-section-title">Languages Known</h2>
+          <ul class="skills-list">
+            <li data-aos="zoom-in" data-aos-delay="0"><i class="fa-solid fa-c"></i> C</li>
+            <li data-aos="zoom-in" data-aos-delay="150"><i class="fa-brands fa-java"></i> Java</li>
+            <li data-aos="zoom-in" data-aos-delay="300"><i class="fa-brands fa-python"></i> Python</li>
+          </ul>
+        </div>
+
+        <hr class="section-separator">
+
+        <!-- Technologies & Tools -->
+        <div class="bg-alt-3" data-aos="fade-up">
+          <h2 class="sub-section-title">Technologies & Tools</h2>
+          <ul class="skills-list">
+            <li data-aos="zoom-in" data-aos-delay="0"><i class="fa-brands fa-html5"></i> HTML5</li>
+            <li data-aos="zoom-in" data-aos-delay="100"><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+            <li data-aos="zoom-in" data-aos-delay="200"><i class="fa-brands fa-js"></i> JavaScript</li>
+            <li data-aos="zoom-in" data-aos-delay="300"><i class="fa-solid fa-code"></i> Streamlit</li>
+            <li data-aos="zoom-in" data-aos-delay="400"><i class="fa-solid fa-database"></i> NumPy</li>
+            <li data-aos="zoom-in" data-aos-delay="500"><i class="fa-solid fa-table"></i> Pandas</li>
+            <li data-aos="zoom-in" data-aos-delay="600"><i class="fa-solid fa-chart-line"></i> Matplotlib</li>
+            <li data-aos="zoom-in" data-aos-delay="700"><i class="fa-brands fa-git-alt"></i> Git & GitHub</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    togglebtn.addEventListener("click",function(){
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+    })
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
